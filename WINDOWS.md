@@ -17,12 +17,14 @@ https://github.com/qiuqing005/paotuan-releases/releases/download/v0.2.0/yehang-p
 
 ## 说明
 
-`v0.2.0` Windows 客户端是 Electron 桌面应用，直接连接线上 HTTPS 跑团服务：
+`v0.2.0` Windows 客户端是 Electron 桌面应用，内置编译后的前端资源，默认连接线上 HTTPS 跑团服务：
 
 ```text
 https://38-76-162-111.sslip.io
 wss://voice.38-76-162-111.sslip.io
 ```
+
+如果你要连接自建服务器，在登录/注册页点“服务器”，填入自建后端地址后保存。正式使用建议配置 HTTPS；局域网临时内测可使用 HTTP。
 
 当前安装包没有商业代码签名证书，Windows SmartScreen 可能提示未知发布者。确认文件来自本仓库后，可以在提示里选择继续运行。
 
