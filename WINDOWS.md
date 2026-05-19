@@ -5,7 +5,7 @@
 下载并运行：
 
 ```text
-https://github.com/qiuqing005/paotuan-releases/releases/download/v0.1.0/yehang-paotuan-windows-v0.1.0.exe
+https://github.com/qiuqing005/paotuan-releases/releases/download/v0.1.1/yehang-paotuan-windows-v0.1.1.exe
 ```
 
 ## 安装步骤
@@ -21,11 +21,6 @@ https://github.com/qiuqing005/paotuan-releases/releases/download/v0.1.0/yehang-p
 
 ```text
 https://38-76-162-111.sslip.io
-```
-
-语音使用 LiveKit / WebRTC：
-
-```text
 wss://voice.38-76-162-111.sslip.io
 ```
 
