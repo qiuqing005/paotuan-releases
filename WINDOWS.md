@@ -1,27 +1,32 @@
 # Windows 安装说明
 
-## 在线安装
+## 安装包
 
-1. 用 Microsoft Edge 或 Chrome 打开服务地址。
-2. 在地址栏或浏览器菜单中选择“安装此站点为应用”。
-3. 安装后可以从开始菜单或桌面快捷方式进入。
-
-当前内测地址：
+下载并运行：
 
 ```text
-http://38.76.162.111
+https://github.com/qiuqing005/paotuan-releases/releases/download/v0.1.0/yehang-paotuan-windows-v0.1.0.exe
 ```
 
-正式使用语音时建议换成 HTTPS 域名。
+## 安装步骤
 
-## 使用包体自部署
+1. 双击 EXE 安装器。
+2. 选择安装目录并完成安装。
+3. 从开始菜单或桌面快捷方式打开“夜航跑团桌”。
+4. 首次加入语音时，允许麦克风权限。
 
-1. 解压 `packages/yehang-paotuan-windows-pwa-v0.1.0.zip`。
-2. 将 `www/` 目录部署到 Web 服务根目录。
-3. Web 服务需要把 `/api/*`、`/health`、`/socket.io/*` 反代到跑团后端。
-4. 用户用 Edge/Chrome 打开部署地址后安装 PWA。
+## 说明
 
-## 限制
+这个 Windows 客户端是 Electron 桌面壳，直接连接线上 HTTPS 跑团服务：
 
-当前不是 EXE/MSIX。后续如果要做真正 Windows 客户端，可以用 WebView2、Electron 或 Tauri 包装当前 PWA。
+```text
+https://38-76-162-111.sslip.io
+```
 
+语音使用 LiveKit / WebRTC：
+
+```text
+wss://voice.38-76-162-111.sslip.io
+```
+
+因为当前包没有商业代码签名证书，Windows SmartScreen 可能提示未知发布者。确认文件来自本仓库后，可以在提示里选择继续运行。
