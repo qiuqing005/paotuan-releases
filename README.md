@@ -4,31 +4,29 @@
 
 ## 当前版本
 
-- 版本：`v0.1.0`
+- 版本：`v0.1.1`
 - 服务地址：`https://38-76-162-111.sslip.io`
 - 语音地址：`wss://voice.38-76-162-111.sslip.io`
 - 适用：10 人以内跑团内测
 
 ## 下载
 
-- Android APK：[yehang-paotuan-android-v0.1.0.apk](https://github.com/qiuqing005/paotuan-releases/releases/download/v0.1.0/yehang-paotuan-android-v0.1.0.apk)
-- Windows EXE：[yehang-paotuan-windows-v0.1.0.exe](https://github.com/qiuqing005/paotuan-releases/releases/download/v0.1.0/yehang-paotuan-windows-v0.1.0.exe)
+- Android APK：[yehang-paotuan-android-v0.1.1.apk](https://github.com/qiuqing005/paotuan-releases/releases/download/v0.1.1/yehang-paotuan-android-v0.1.1.apk)
+- Windows EXE：[yehang-paotuan-windows-v0.1.1.exe](https://github.com/qiuqing005/paotuan-releases/releases/download/v0.1.1/yehang-paotuan-windows-v0.1.1.exe)
 
-## 功能
+## v0.1.1 改动
 
-- 账号注册、登录、会话恢复
-- 房间列表与创建
-- 地图、地形、棋子选择与移动
-- 角色 HP / SAN 状态管理
-- 团内聊天记录
-- LiveKit / WebRTC 高清语音接入
-- Android 移动端三页结构：地图、聊天、角色
-- Windows 桌面宽屏布局
+- Android APK 不再是 13KB 远程网页壳，已内置编译后的前端资源。
+- 移动端新增骰子面板，支持 `1d100`、`1d20`、`2d6`、`1d6+1` 和自定义公式。
+- 地图页新增 HP / SAN 快捷加减按钮。
+- 房间创建可以填写房间名和规则。
+- 修复移动端语音浮层遮挡地图页操作按钮的问题。
 
 ## 已验证
 
 - HTTPS 应用健康检查返回 200
 - LiveKit token 返回 `configured=true`，语音 URL 为 `wss://voice.38-76-162-111.sslip.io`
 - Android APK 已签名并通过 `apksigner verify`
+- APK 内确认包含 `assets/www/index.html`、JS 和 CSS
 - Windows EXE 已由 Electron Builder 生成 NSIS 安装器
-- 已截图检查桌面端与移动端地图、聊天、角色、语音浮层 UI
+- 已截图检查移动端地图、聊天骰子、角色页 UI
