@@ -1,31 +1,32 @@
 # Android 安装说明
 
-## 在线安装
+## 安装包
 
-1. 用 Android Chrome 打开服务地址。
-2. 浏览器菜单中选择“添加到主屏幕”或“安装应用”。
-3. 安装后从桌面图标进入。
-
-当前内测地址：
+下载并安装：
 
 ```text
-http://38.76.162.111
+https://github.com/qiuqing005/paotuan-releases/releases/download/v0.1.0/yehang-paotuan-android-v0.1.0.apk
 ```
 
-正式使用语音时建议换成 HTTPS 域名，例如：
+## 安装步骤
+
+1. 把 APK 下载到 Android 手机。
+2. 点开 APK。如果系统提示来源未知，允许当前浏览器或文件管理器安装未知来源应用。
+3. 安装后从桌面图标打开“夜航跑团桌”。
+4. 首次加入语音时，允许麦克风权限。
+
+## 语音
+
+APK 内置 WebView 打开 HTTPS 服务：
 
 ```text
-https://app.example.com
+https://38-76-162-111.sslip.io
 ```
 
-## 使用包体自部署
+语音使用 LiveKit / WebRTC：
 
-1. 解压 `packages/yehang-paotuan-android-pwa-v0.1.0.zip`。
-2. 将 `www/` 目录部署到 Web 服务根目录。
-3. Web 服务需要把 `/api/*`、`/health`、`/socket.io/*` 反代到跑团后端。
-4. LiveKit 语音需要服务端配置 `LIVEKIT_URL`、`LIVEKIT_API_KEY`、`LIVEKIT_API_SECRET`。
+```text
+wss://voice.38-76-162-111.sslip.io
+```
 
-## 限制
-
-当前不是 APK。后续如果要发布 APK，建议用 Capacitor 或 Trusted Web Activity 打包，并配置 Android 签名证书。
-
+如果手机无法加入语音，优先检查系统麦克风权限、Android System WebView 版本、网络是否屏蔽 UDP 或 WebRTC。
