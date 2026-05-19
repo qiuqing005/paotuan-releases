@@ -5,7 +5,7 @@
 下载并安装：
 
 ```text
-https://github.com/qiuqing005/paotuan-releases/releases/download/v0.1.1/yehang-paotuan-android-v0.1.1.apk
+https://github.com/qiuqing005/paotuan-releases/releases/download/v0.1.2/yehang-paotuan-android-v0.1.2.apk
 ```
 
 ## 安装步骤
@@ -17,7 +17,7 @@ https://github.com/qiuqing005/paotuan-releases/releases/download/v0.1.1/yehang-p
 
 ## 说明
 
-`v0.1.1` APK 已内置编译后的前端资源，不再只是远程 WebView 壳。应用内界面通过安全本地 HTTPS 资产加载，数据、同步和语音连接到线上服务：
+`v0.1.2` APK 已内置编译后的前端资源，不再只是远程 WebView 壳。应用内界面通过安全本地 HTTPS 资产加载，数据、同步和语音连接到线上服务：
 
 ```text
 https://38-76-162-111.sslip.io
@@ -25,3 +25,9 @@ wss://voice.38-76-162-111.sslip.io
 ```
 
 如果手机无法加入语音，优先检查系统麦克风权限、Android System WebView 版本、网络是否屏蔽 UDP 或 WebRTC。
+
+## 已实测
+
+- Android 15 x86_64 模拟器安装成功，包名 `com.yehang.paotuan`，版本 `0.1.2`。
+- 地图页、聊天页、角色页均可打开，聊天页可直接掷骰并写入记录。
+- LiveKit 高清语音可连接，WebRTC 日志显示 connected 并发布本地音轨。
