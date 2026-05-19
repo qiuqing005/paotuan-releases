@@ -5,7 +5,7 @@
 下载并安装：
 
 ```text
-https://github.com/qiuqing005/paotuan-releases/releases/download/v0.1.0/yehang-paotuan-android-v0.1.0.apk
+https://github.com/qiuqing005/paotuan-releases/releases/download/v0.1.1/yehang-paotuan-android-v0.1.1.apk
 ```
 
 ## 安装步骤
@@ -15,17 +15,12 @@ https://github.com/qiuqing005/paotuan-releases/releases/download/v0.1.0/yehang-p
 3. 安装后从桌面图标打开“夜航跑团桌”。
 4. 首次加入语音时，允许麦克风权限。
 
-## 语音
+## 说明
 
-APK 内置 WebView 打开 HTTPS 服务：
+`v0.1.1` APK 已内置编译后的前端资源，不再只是远程 WebView 壳。应用内界面通过安全本地 HTTPS 资产加载，数据、同步和语音连接到线上服务：
 
 ```text
 https://38-76-162-111.sslip.io
-```
-
-语音使用 LiveKit / WebRTC：
-
-```text
 wss://voice.38-76-162-111.sslip.io
 ```
 
