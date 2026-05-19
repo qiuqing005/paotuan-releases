@@ -5,7 +5,7 @@
 下载并运行：
 
 ```text
-https://github.com/qiuqing005/paotuan-releases/releases/download/v0.1.1/yehang-paotuan-windows-v0.1.1.exe
+https://github.com/qiuqing005/paotuan-releases/releases/download/v0.1.2/yehang-paotuan-windows-v0.1.2.exe
 ```
 
 ## 安装步骤
@@ -17,7 +17,7 @@ https://github.com/qiuqing005/paotuan-releases/releases/download/v0.1.1/yehang-p
 
 ## 说明
 
-这个 Windows 客户端是 Electron 桌面壳，直接连接线上 HTTPS 跑团服务：
+`v0.1.2` Windows 客户端是 Electron 桌面壳，直接连接线上 HTTPS 跑团服务：
 
 ```text
 https://38-76-162-111.sslip.io
