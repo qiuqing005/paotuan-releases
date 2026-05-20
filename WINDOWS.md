@@ -3,7 +3,7 @@
 ## Latest EXE
 
 ```text
-https://github.com/qiuqing005/paotuan-releases/releases/download/v0.2.5/yehang-paotuan-windows-v0.2.5.exe
+https://github.com/qiuqing005/paotuan-releases/releases/download/v0.2.6/yehang-paotuan-windows-v0.2.6.exe
 ```
 
 ## Install Steps
@@ -15,7 +15,7 @@ https://github.com/qiuqing005/paotuan-releases/releases/download/v0.2.5/yehang-p
 
 ## Notes
 
-`v0.2.5` is an Electron desktop client with the compiled frontend bundled inside. It connects to the production service by default:
+`v0.2.6` is an Electron desktop client with the compiled frontend bundled inside. It connects to the production service by default:
 
 ```text
 https://38-76-162-111.sslip.io
@@ -29,4 +29,4 @@ This installer is not signed with a commercial publisher certificate, so Windows
 ## Verified
 
 - Windows EXE generated as an NSIS x64 installer with Electron Builder.
-- Desktop client built as an NSIS x64 installer with the same `v0.2.5` frontend bundle as Android.
+- Desktop client built as an NSIS x64 installer with the same `v0.2.6` frontend bundle as Android.
