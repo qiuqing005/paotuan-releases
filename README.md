@@ -1,44 +1,35 @@
-# 夜航跑团桌发布包
+# Yehang Paotuan Releases
 
-这个仓库只用于发布用户可直接安装的客户端包和说明文档，不包含项目源码。
+This repository only contains user-installable packages and Markdown notes. It does not contain project source code.
 
-## 当前版本
+## Current Packages
 
-- 版本：`v0.2.0`
-- 默认服务地址：`https://38-76-162-111.sslip.io`
-- 语音地址：`wss://voice.38-76-162-111.sslip.io`
-- 适用：10 人以内跑团内测
+- Android APK: [yehang-paotuan-android-v0.2.2.apk](https://github.com/qiuqing005/paotuan-releases/releases/download/v0.2.2/yehang-paotuan-android-v0.2.2.apk)
+- Windows EXE: [yehang-paotuan-windows-v0.2.0.exe](https://github.com/qiuqing005/paotuan-releases/releases/download/v0.2.0/yehang-paotuan-windows-v0.2.0.exe)
 
-## 下载
+## Default Server
 
-- Android APK：[yehang-paotuan-android-v0.2.0.apk](https://github.com/qiuqing005/paotuan-releases/releases/download/v0.2.0/yehang-paotuan-android-v0.2.0.apk)
-- Windows EXE：[yehang-paotuan-windows-v0.2.0.exe](https://github.com/qiuqing005/paotuan-releases/releases/download/v0.2.0/yehang-paotuan-windows-v0.2.0.exe)
+```text
+https://38-76-162-111.sslip.io
+wss://voice.38-76-162-111.sslip.io
+```
 
-## v0.2.0 改动
+## Android v0.2.2
 
-- 新增邮箱注册和登录，打开软件后先进入登录/注册页。
-- 登录后进入房间大厅，不再默认进入房间。
-- 新增公开房/私密房，私密房只有房主好友可加入。
-- 新增好友申请、同意和好友列表。
-- 新增“我的”页，可修改用户名、头像和密码。
-- 新增剧本库、文本剧本上传和剧本编辑器。
-- 剧本编辑器支持地图、人物数量和参数、故事文本、骰子公式与概率。
-- 房间内拆分为地图、聊天、角色、语音四个二级页。
-- 语音页新增发言人系统降噪开关和每人本地收听音量滑条。
-- 登录/注册页新增服务器设置，默认连接当前公测服务器，也可填写自建服务器 HTTPS 地址。
+- Fixes avatar upload on Android WebView.
+- Tapping "选择图片" now opens the Android system image picker.
+- Selecting an image returns to the app, loads a preview, and can be saved to the profile.
+- APK metadata: package `com.yehang.paotuan`, versionCode `6`, versionName `0.2.2`.
 
-## 邮箱与服务器说明
+If an older test APK is already installed and Android reports an update failure, uninstall the old APK first, then install `v0.2.2`.
 
-- 当前客户端默认连接上面的公测服务器，用户下载安装后可以直接注册和使用。
-- 如果要连接自建后端，请先部署兼容的跑团服务器，再在登录页点“服务器”填入自建地址。正式使用建议配置 HTTPS；局域网临时内测可使用 HTTP。
-- 外部邮箱验证码要稳定送达 QQ、Gmail、Outlook 等主流邮箱，需要服务端配置 Resend 或可靠 SMTP 中继，并完成 SPF、DKIM、DMARC 等域名校验；未开启外发中继的 Cloud Mail 只能保证站内邮箱发信。
+## Email Delivery Note
 
-## 已验证
+The app server currently verifies that Cloud Mail is configured with `zhongsheng@yuelanshan.cloud`, but sending registration codes to external inboxes such as QQ still requires an external mail relay such as Resend or a real SMTP service. Cloudflare Email Routing is inbound routing/forwarding and is not an outbound SMTP service.
 
-- 本地 `npm run build` 通过。
-- 本地 `npm run smoke` 通过。
-- 公网 `https://38-76-162-111.sslip.io` smoke 通过，LiveKit 返回 `configured=true`。
-- Android APK 已签名并通过 `apksigner verify`。
-- Android 模拟器已安装并启动到登录页。
-- Playwright 已截图检查桌面端大厅、剧本编辑器、房间地图、语音页，以及移动端大厅、社交、房间地图、语音页。
-- Windows EXE 已由 Electron Builder 生成 NSIS x64 安装器。
+## Verified
+
+- `npm run test` passed.
+- `npm run build` passed.
+- APK signed and verified with `apksigner verify`.
+- Android emulator screenshots checked for login, profile, system image picker, selected avatar, and saved avatar state.
