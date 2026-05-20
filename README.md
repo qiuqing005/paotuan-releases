@@ -4,8 +4,8 @@ This repository contains install notes for user-installable packages. It does no
 
 ## Current Packages
 
-- Android APK: [yehang-paotuan-android-v0.2.4.apk](https://github.com/qiuqing005/paotuan-releases/releases/download/v0.2.4/yehang-paotuan-android-v0.2.4.apk)
-- Windows EXE: [yehang-paotuan-windows-v0.2.4.exe](https://github.com/qiuqing005/paotuan-releases/releases/download/v0.2.4/yehang-paotuan-windows-v0.2.4.exe)
+- Android APK: [yehang-paotuan-android-v0.2.5.apk](https://github.com/qiuqing005/paotuan-releases/releases/download/v0.2.5/yehang-paotuan-android-v0.2.5.apk)
+- Windows EXE: [yehang-paotuan-windows-v0.2.5.exe](https://github.com/qiuqing005/paotuan-releases/releases/download/v0.2.5/yehang-paotuan-windows-v0.2.5.exe)
 
 ## Default Server
 
@@ -13,6 +13,14 @@ This repository contains install notes for user-installable packages. It does no
 https://38-76-162-111.sslip.io
 wss://voice.38-76-162-111.sslip.io
 ```
+
+## v0.2.5
+
+- Adds fixed-scroll chat layouts for direct messages and room chat, keeping the input box pinned while only the message list scrolls.
+- Adds quick return-to-bottom buttons when reading older direct or room messages.
+- Adds room-message reply references, clickable reply navigation, and selected-message actions for reply and targeted dice checks.
+- Adds structured dice check results with success and failure badges beside the message author.
+- Removes the unclear per-message arrow icon from room chat.
 
 ## v0.2.4
 
@@ -40,4 +48,4 @@ wss://voice.38-76-162-111.sslip.io
 - `npm --workspace apps/web run test` passed.
 - `npm run smoke` passed.
 - APK signed and verified with `apksigner verify`.
-- Browser screenshots checked for mobile lobby, create-room dialog, closed-room tab, room map/chat/floating dock, account chat, and desktop lobby.
+- Browser screenshots checked for direct chat scrolling, room chat scrolling, reply references, targeted dice checks, and dice success/failure badges.
