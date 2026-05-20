@@ -4,8 +4,8 @@ This repository contains install notes for user-installable packages. It does no
 
 ## Current Packages
 
-- Android APK: [yehang-paotuan-android-v0.2.3.apk](https://github.com/qiuqing005/paotuan-releases/releases/download/v0.2.3/yehang-paotuan-android-v0.2.3.apk)
-- Windows EXE: [yehang-paotuan-windows-v0.2.3.exe](https://github.com/qiuqing005/paotuan-releases/releases/download/v0.2.3/yehang-paotuan-windows-v0.2.3.exe)
+- Android APK: [yehang-paotuan-android-v0.2.4.apk](https://github.com/qiuqing005/paotuan-releases/releases/download/v0.2.4/yehang-paotuan-android-v0.2.4.apk)
+- Windows EXE: [yehang-paotuan-windows-v0.2.4.exe](https://github.com/qiuqing005/paotuan-releases/releases/download/v0.2.4/yehang-paotuan-windows-v0.2.4.exe)
 
 ## Default Server
 
@@ -13,6 +13,14 @@ This repository contains install notes for user-installable packages. It does no
 https://38-76-162-111.sslip.io
 wss://voice.38-76-162-111.sslip.io
 ```
+
+## v0.2.4
+
+- Adds LiveKit voice auto-reconnect for network fluctuations, including token refresh, browser online/offline retry, and playback-state recovery after reconnect.
+- Keeps ghost and empty rooms out of the default lobby while preserving closed rooms as personal history.
+- Adds the closed-room list tab; previous participants can reopen closed rooms, ordinary players can remove only their own history, and room owners can delete the room.
+- Moves room creation to the lobby header plus button and opens the existing creation flow in a dialog.
+- Includes the latest mobile lobby and room-list UI fixes.
 
 ## v0.2.3
 
@@ -32,4 +40,4 @@ wss://voice.38-76-162-111.sslip.io
 - `npm --workspace apps/web run test` passed.
 - `npm run smoke` passed.
 - APK signed and verified with `apksigner verify`.
-- Browser screenshots checked for mobile auth, mobile lobby, account, chat, room voice, and desktop lobby.
+- Browser screenshots checked for mobile lobby, create-room dialog, closed-room tab, room map/chat/floating dock, account chat, and desktop lobby.

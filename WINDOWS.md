@@ -3,7 +3,7 @@
 ## Latest EXE
 
 ```text
-https://github.com/qiuqing005/paotuan-releases/releases/download/v0.2.3/yehang-paotuan-windows-v0.2.3.exe
+https://github.com/qiuqing005/paotuan-releases/releases/download/v0.2.4/yehang-paotuan-windows-v0.2.4.exe
 ```
 
 ## Install Steps
@@ -15,7 +15,7 @@ https://github.com/qiuqing005/paotuan-releases/releases/download/v0.2.3/yehang-p
 
 ## Notes
 
-`v0.2.3` is an Electron desktop client with the compiled frontend bundled inside. It connects to the production service by default:
+`v0.2.4` is an Electron desktop client with the compiled frontend bundled inside. It connects to the production service by default:
 
 ```text
 https://38-76-162-111.sslip.io
