@@ -1,11 +1,11 @@
 # Yehang Paotuan Releases
 
-This repository only contains user-installable packages and Markdown notes. It does not contain project source code.
+This repository contains install notes for user-installable packages. It does not contain project source code.
 
 ## Current Packages
 
-- Android APK: [yehang-paotuan-android-v0.2.2.apk](https://github.com/qiuqing005/paotuan-releases/releases/download/v0.2.2/yehang-paotuan-android-v0.2.2.apk)
-- Windows EXE: [yehang-paotuan-windows-v0.2.0.exe](https://github.com/qiuqing005/paotuan-releases/releases/download/v0.2.0/yehang-paotuan-windows-v0.2.0.exe)
+- Android APK: [yehang-paotuan-android-v0.2.3.apk](https://github.com/qiuqing005/paotuan-releases/releases/download/v0.2.3/yehang-paotuan-android-v0.2.3.apk)
+- Windows EXE: [yehang-paotuan-windows-v0.2.3.exe](https://github.com/qiuqing005/paotuan-releases/releases/download/v0.2.3/yehang-paotuan-windows-v0.2.3.exe)
 
 ## Default Server
 
@@ -14,22 +14,22 @@ https://38-76-162-111.sslip.io
 wss://voice.38-76-162-111.sslip.io
 ```
 
-## Android v0.2.2
+## v0.2.3
 
-- Fixes avatar upload on Android WebView.
-- Tapping "选择图片" now opens the Android system image picker.
-- Selecting an image returns to the app, loads a preview, and can be saved to the profile.
-- APK metadata: package `com.yehang.paotuan`, versionCode `6`, versionName `0.2.2`.
-
-If an older test APK is already installed and Android reports an update failure, uninstall the old APK first, then install `v0.2.2`.
-
-## Email Delivery Note
-
-The app server currently verifies that Cloud Mail is configured with `zhongsheng@yuelanshan.cloud`, but sending registration codes to external inboxes such as QQ still requires an external mail relay such as Resend or a real SMTP service. Cloudflare Email Routing is inbound routing/forwarding and is not an outbound SMTP service.
+- Adds login/register password visibility controls and email-code password reset.
+- Moves friend management under Account, changes Social to Chat, and adds direct-message UI.
+- Adds room friend invitation, realtime room list refresh, and visible close time for closed rooms.
+- Replaces the room-header sign-out control with room invitation.
+- Adds LiveKit audio playback recovery for Android/WebView autoplay blocking.
+- Forces Android APK WebView into mobile layout, including larger-screen devices.
+- Keeps Android avatar upload through the native image picker.
 
 ## Verified
 
-- `npm run test` passed.
+- `npm run lint` passed.
 - `npm run build` passed.
+- `npm --workspace apps/server run test` passed.
+- `npm --workspace apps/web run test` passed.
+- `npm run smoke` passed.
 - APK signed and verified with `apksigner verify`.
-- Android emulator screenshots checked for login, profile, system image picker, selected avatar, and saved avatar state.
+- Browser screenshots checked for mobile auth, mobile lobby, account, chat, room voice, and desktop lobby.

@@ -1,34 +1,32 @@
-# Windows 安装说明
+# Windows Install Notes
 
-## 安装包
-
-下载并运行：
+## Latest EXE
 
 ```text
-https://github.com/qiuqing005/paotuan-releases/releases/download/v0.2.0/yehang-paotuan-windows-v0.2.0.exe
+https://github.com/qiuqing005/paotuan-releases/releases/download/v0.2.3/yehang-paotuan-windows-v0.2.3.exe
 ```
 
-## 安装步骤
+## Install Steps
 
-1. 双击 EXE 安装器。
-2. 选择安装目录并完成安装。
-3. 从开始菜单或桌面快捷方式打开“夜航跑团桌”。
-4. 首次进入语音页时，允许麦克风权限。
+1. Download and run the EXE installer.
+2. Choose an install directory and complete installation.
+3. Open Yehang Paotuan from the Start menu or desktop shortcut.
+4. Allow microphone permission when entering voice features.
 
-## 说明
+## Notes
 
-`v0.2.0` Windows 客户端是 Electron 桌面应用，内置编译后的前端资源，默认连接线上 HTTPS 跑团服务：
+`v0.2.3` is an Electron desktop client with the compiled frontend bundled inside. It connects to the production service by default:
 
 ```text
 https://38-76-162-111.sslip.io
 wss://voice.38-76-162-111.sslip.io
 ```
 
-如果你要连接自建服务器，在登录/注册页点“服务器”，填入自建后端地址后保存。正式使用建议配置 HTTPS；局域网临时内测可使用 HTTP。
+To use a self-hosted backend, click Server on the login/register page, enter the backend URL, and save it.
 
-当前安装包没有商业代码签名证书，Windows SmartScreen 可能提示未知发布者。确认文件来自本仓库后，可以在提示里选择继续运行。
+This installer is not signed with a commercial publisher certificate, so Windows SmartScreen may show an unknown-publisher warning.
 
-## 已实测
+## Verified
 
-- Windows EXE 已由 Electron Builder 生成 NSIS x64 安装器。
-- 桌面端大厅、剧本编辑器、房间地图和语音页已截图检查。
+- Windows EXE generated as an NSIS x64 installer with Electron Builder.
+- Desktop lobby screenshot checked.
