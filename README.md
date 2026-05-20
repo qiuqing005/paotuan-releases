@@ -4,8 +4,8 @@ This repository contains install notes for user-installable packages. It does no
 
 ## Current Packages
 
-- Android APK: [yehang-paotuan-android-v0.2.5.apk](https://github.com/qiuqing005/paotuan-releases/releases/download/v0.2.5/yehang-paotuan-android-v0.2.5.apk)
-- Windows EXE: [yehang-paotuan-windows-v0.2.5.exe](https://github.com/qiuqing005/paotuan-releases/releases/download/v0.2.5/yehang-paotuan-windows-v0.2.5.exe)
+- Android APK: [yehang-paotuan-android-v0.2.6.apk](https://github.com/qiuqing005/paotuan-releases/releases/download/v0.2.6/yehang-paotuan-android-v0.2.6.apk)
+- Windows EXE: [yehang-paotuan-windows-v0.2.6.exe](https://github.com/qiuqing005/paotuan-releases/releases/download/v0.2.6/yehang-paotuan-windows-v0.2.6.exe)
 
 ## Default Server
 
@@ -13,6 +13,15 @@ This repository contains install notes for user-installable packages. It does no
 https://38-76-162-111.sslip.io
 wss://voice.38-76-162-111.sslip.io
 ```
+
+## v0.2.6
+
+- Reworks the room flow around the real COC7 preparation sequence: module confirmation, module editing, recruitment, character creation, KP review, casting/import, and active play.
+- Adds keeper-side character sheet review with notes, approval/rejection, and imported room character data.
+- Adds player-side COC7 sheet drafting, saving, submission, review feedback, and script-character selection.
+- Imports approved character attributes, derived HP/SAN/MP/MOV/DB/build, and skill totals into room characters and dice checks.
+- Adds `.ra` COC7 checks against imported character attributes or skills, including success/failure result badges.
+- Includes Playwright screenshots for module lock, player character creation, keeper review, imported character state, and COC7 dice checks.
 
 ## v0.2.5
 
@@ -48,4 +57,4 @@ wss://voice.38-76-162-111.sslip.io
 - `npm --workspace apps/web run test` passed.
 - `npm run smoke` passed.
 - APK signed and verified with `apksigner verify`.
-- Browser screenshots checked for direct chat scrolling, room chat scrolling, reply references, targeted dice checks, and dice success/failure badges.
+- Playwright screenshots checked for the COC7 preparation flow, KP review, character import, and COC7 dice result badges.
