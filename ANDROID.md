@@ -3,7 +3,7 @@
 ## Latest APK
 
 ~~~text
-https://github.com/qiuqing005/paotuan-releases/releases/download/v0.2.8/yehang-paotuan-android-v0.2.8.apk
+https://github.com/qiuqing005/paotuan-releases/blob/main/packages/yehang-paotuan-android-v0.2.8.apk?raw=1
 ~~~
 
 ## Install Steps

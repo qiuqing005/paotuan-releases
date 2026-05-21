@@ -4,8 +4,8 @@
 
 | File | Platform | Notes |
 | --- | --- | --- |
-| [yehang-paotuan-android-v0.2.8.apk](https://github.com/qiuqing005/paotuan-releases/releases/download/v0.2.8/yehang-paotuan-android-v0.2.8.apk) | Android | Signed APK, package com.yehang.paotuan, versionCode 12, versionName 0.2.8, size 1.21 MB. |
-| [yehang-paotuan-windows-v0.2.8.exe](https://github.com/qiuqing005/paotuan-releases/releases/download/v0.2.8/yehang-paotuan-windows-v0.2.8.exe) | Windows | NSIS x64 installer built with Electron Builder, version 0.2.8, size 96.43 MB. |
+| [yehang-paotuan-android-v0.2.8.apk](https://github.com/qiuqing005/paotuan-releases/blob/main/packages/yehang-paotuan-android-v0.2.8.apk?raw=1) | Android | Signed APK, package com.yehang.paotuan, versionCode 12, versionName 0.2.8, size 1.21 MB. |
+| [yehang-paotuan-windows-v0.2.8.exe](https://github.com/qiuqing005/paotuan-releases/blob/main/packages/yehang-paotuan-windows-v0.2.8.exe?raw=1) | Windows | NSIS x64 installer built with Electron Builder, version 0.2.8, size 96.43 MB. |
 
 ## SHA256
 

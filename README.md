@@ -4,8 +4,8 @@ This repository contains install notes for user-installable packages. It does no
 
 ## Current Packages
 
-- Android APK: [yehang-paotuan-android-v0.2.8.apk](https://github.com/qiuqing005/paotuan-releases/releases/download/v0.2.8/yehang-paotuan-android-v0.2.8.apk)
-- Windows EXE: [yehang-paotuan-windows-v0.2.8.exe](https://github.com/qiuqing005/paotuan-releases/releases/download/v0.2.8/yehang-paotuan-windows-v0.2.8.exe)
+- Android APK: [yehang-paotuan-android-v0.2.8.apk](https://github.com/qiuqing005/paotuan-releases/blob/main/packages/yehang-paotuan-android-v0.2.8.apk?raw=1)
+- Windows EXE: [yehang-paotuan-windows-v0.2.8.exe](https://github.com/qiuqing005/paotuan-releases/blob/main/packages/yehang-paotuan-windows-v0.2.8.exe?raw=1)
 
 ## Default Server
 

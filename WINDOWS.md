@@ -3,7 +3,7 @@
 ## Latest EXE
 
 ~~~text
-https://github.com/qiuqing005/paotuan-releases/releases/download/v0.2.8/yehang-paotuan-windows-v0.2.8.exe
+https://github.com/qiuqing005/paotuan-releases/blob/main/packages/yehang-paotuan-windows-v0.2.8.exe?raw=1
 ~~~
 
 ## Install Steps
