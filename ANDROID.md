@@ -2,32 +2,33 @@
 
 ## Latest APK
 
-```text
-https://github.com/qiuqing005/paotuan-releases/releases/download/v0.2.6/yehang-paotuan-android-v0.2.6.apk
-```
+~~~text
+https://github.com/qiuqing005/paotuan-releases/releases/download/v0.2.8/yehang-paotuan-android-v0.2.8.apk
+~~~
 
 ## Install Steps
 
 1. Download the APK to an Android phone.
 2. Open the APK. If Android blocks unknown sources, allow installs from the current browser or file manager.
-3. Open "Yehang Paotuan" from the launcher.
+3. Open Yehang Paotuan from the launcher.
 4. Allow microphone permission when entering voice features.
 
 ## Notes
 
-`v0.2.6` includes account, friend, chat, room invitation, password reset, Android forced-mobile layout, avatar upload, voice playback recovery, voice auto-reconnect, closed-room history fixes, fixed chat scrolling, reply references, structured dice check result badges, and the new COC7 module preparation / character sheet review / character import flow.
+v0.2.8 includes the native URL/config fix, room chat send acknowledgement, reply target validation, direct-message loading fixes, improved dice input, and the dedicated room Flow tab.
 
 The app connects to the production service by default:
 
-```text
+~~~text
 https://38-76-162-111.sslip.io
 wss://voice.38-76-162-111.sslip.io
-```
+~~~
 
-If an older test APK is already installed and Android reports an update failure, uninstall the old APK first, then install `v0.2.6`.
+If an older test APK is already installed and Android reports an update failure, uninstall the old APK first, then install v0.2.8.
 
 ## Verified
 
-- APK signature verified with `apksigner verify`.
-- APK metadata: package `com.yehang.paotuan`, versionCode `10`, versionName `0.2.6`.
-- Mobile UI screenshots checked for the COC7 preparation flow, player character creation, KP review, imported character state, and COC7 dice result badges.
+- APK signature verified with apksigner verify.
+- APK metadata: package com.yehang.paotuan, versionCode 12, versionName 0.2.8.
+- APK bundle contains assets/www/index.html, assets/www/native-config.js, compiled JS, and compiled CSS.
+- Android emulator screenshot checked after install.
